@@ -1,0 +1,9 @@
+{% extends "base.jinja" %}
+
+{% block content %}
+<h2>{{ user.username }} Profile</h2>
+
+{% for post in posts %}
+    <p>{{ post.author.username }} says: {{ post.body }}</p>
+{% endfor %}
+{% endblock %}
